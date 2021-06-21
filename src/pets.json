@@ -1,0 +1,130 @@
+[
+  {
+    "id": 0,
+    "name": "Sims Urban Oasis",
+    "picture": "images/Sims-Urban-Oasis.jpg",
+    "age": 1550000,
+    "breed": "Condo",
+    "location": "Sims drive"
+  },
+  {
+    "id": 1,
+    "name": "Casa Merah",
+    "picture": "images/Casa-Merah.jpg",
+    "age": 1180000,
+    "breed": "Condo",
+    "location": "70 Tanah Merah"
+  },
+  {
+    "id": 2,
+    "name": "Ballota Park Condo",
+    "picture": "images/Ballota.jpg",
+    "age": 1555555,
+    "breed": "Condo",
+    "location": "150 Mariam Way"
+  },
+  {
+    "id": 3,
+    "name": "Lattice One",
+    "picture": "images/Casa-Merah.jpg",
+    "age": 1830000,
+    "breed": "Condo",
+    "location": "1 Seraya Crescent"
+  },
+  {
+    "id": 4,
+    "name": "Lumiere",
+    "picture": "images/Lumiere.jpg",
+    "age": 985800,
+    "breed": "Condo",
+    "location": "2 Mistri Road"
+  },
+  {
+    "id": 5,
+    "name": "Avenue South Residence",
+    "picture": "images/Avenue.jpg",
+    "age": 1267000,
+    "breed": "Condo",
+    "location": "3 Silat Avenue"
+  },
+  {
+    "id": 6,
+    "name": "Wilshire Residences",
+    "picture": "images/Wilshire.jpg",
+    "age": 1582700,
+    "breed": "Condo",
+    "location": "30 Farrer Road"
+  },
+  {
+    "id": 7,
+    "name": "Sturdee Residences",
+    "picture": "images/Sturdee.jpg",
+    "age": 1680000,
+    "breed": "Condo",
+    "location": "Sturdee Road "
+  },
+  {
+    "id": 8,
+    "name": "MeyerHouse",
+    "picture": "images/Meyer.jpg",
+    "age": 13620000,
+    "breed": "Condo",
+    "location": "128 Meyer Road"
+  },
+  {
+    "id": 9,
+    "name": "UE Square",
+    "picture": "images/UE.jpg",
+    "age": 1920000,
+    "breed": "Condo",
+    "location": "Orchard / River Valley"
+  },
+  {
+    "id": 10,
+    "name": "Moda",
+    "picture": "images/Moda.jpg",
+    "age": 2250000,
+    "breed": "Condo",
+    "location": "42 East Coast Road"
+  },
+  {
+    "id": 11,
+    "name": "Flora View",
+    "picture": "images/Casa-Merah.jpg",
+    "age": 1388000,
+    "breed": "Apartment",
+    "location": "5 Ang Mo Kio Street 66"
+  },
+  {
+    "id": 12,
+    "name": "The Landmark",
+    "picture": "images/The.jpg",
+    "age": 1563000,
+    "breed": "Condo",
+    "location": "173 Chin Swee Road"
+  },
+  {
+    "id": 13,
+    "name": "Seascape @ Sentosa Cove",
+    "picture": "images/Seascape.jpg",
+    "age": 5600000,
+    "breed": "Condo",
+    "location": "55 Cove Way"
+  },
+  {
+    "id": 14,
+    "name": "Kovan Melody",
+    "picture": "images/Kovan.jpg",
+    "age": 1280000,
+    "breed": "Condo",
+    "location": "27 Kovan Road"
+  },
+  {
+    "id": 15,
+    "name": "Seahill",
+    "picture": "images/Seahill.png",
+    "age": 1300000,
+    "breed": "Condo",
+    "location": "119 West Coast Crescent "
+  }
+]
