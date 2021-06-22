@@ -123,15 +123,15 @@ $(function() {
 
 // to add wallet balance
 
-window.addEventListener('load', function () {
-    if (typeof web3 !== 'undefined') {
-        console.log('Web3 Detected! ' + web3.currentProvider.constructor.name)
-        window.web3 = new Web3(web3.currentProvider);
-    } else {
-        console.log('No Web3 Detected... using HTTP Provider')
-        window.web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/<APIKEY>"));
-    }
-})
+// window.addEventListener('load', function () {
+//     if (typeof web3 !== 'undefined') {
+//         console.log('Web3 Detected! ' + web3.currentProvider.constructor.name)
+//         window.web3 = new Web3(web3.currentProvider);
+//     } else {
+//         console.log('No Web3 Detected... using HTTP Provider')
+//         window.web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/<APIKEY>"));
+//     }
+// })
 
 const promisify = (inner) =>
     new Promise((resolve, reject) =>
@@ -145,46 +145,46 @@ const promisify = (inner) =>
     );
 
 
-async function getBalance() {
-    var address, wei, balance
-    // address = document.getElementById("address").value;
-    address = "0xD24b9ED75A00EBa71b51D036823F8f5127bD4a64"; //hard-coded metamask ethereum wallet address.
-    wei = promisify(cb => web3.eth.getBalance(address, cb))
-    try {
-        balance = web3.fromWei(await wei, 'ether')
-        document.getElementById("output").innerHTML = "You own : " + balance + " ETH";
+// async function getBalance() {
+//     var address, wei, balance
+//     // address = document.getElementById("address").value;
+//     address = "0xD24b9ED75A00EBa71b51D036823F8f5127bD4a64"; //hard-coded metamask ethereum wallet address.
+//     wei = promisify(cb => web3.eth.getBalance(address, cb))
+//     try {
+//         balance = web3.fromWei(await wei, 'ether')
+//         document.getElementById("output").innerHTML = "You own : " + balance + " ETH";
 
-            } catch (error) {
-        document.getElementById("output").innerHTML = error;
-    }
-}
-async function getERC20Balance() {
-    var address, contractAddress, contractABI, tokenContract, decimals, balance, name, symbol, adjustedBalance
-    // address = document.getElementById("address").value
-    // contractAddress = document.getElementById("contractAddress").value
-    address = "0xD24b9ED75A00EBa71b51D036823F8f5127bD4a64";
-    contractAddress = "0xf8d9ec39f1798bc68096e144dfb37cb2ebd3e0b0";
+//             } catch (error) {
+//         document.getElementById("output").innerHTML = error;
+//     }
+// }
+// async function getERC20Balance() {
+//     var address, contractAddress, contractABI, tokenContract, decimals, balance, name, symbol, adjustedBalance
+//     // address = document.getElementById("address").value
+//     // contractAddress = document.getElementById("contractAddress").value
+//     address = "0xD24b9ED75A00EBa71b51D036823F8f5127bD4a64";
+//     contractAddress = "0x17b16bD0ab2E65Fdc28307462eF2FCa2670b1295";
     
-    contractABI = human_standard_token_abi
+//     contractABI = human_standard_token_abi
 
-    tokenContract = web3.eth.contract(contractABI).at(contractAddress)
+//     tokenContract = web3.eth.contract(contractABI).at(contractAddress)
 
-    decimals = promisify(cb => tokenContract.decimals(cb))
-    balance = promisify(cb => tokenContract.balanceOf(address, cb))
-    name = promisify(cb => tokenContract.name(cb))
-    symbol = promisify(cb => tokenContract.symbol(cb))
+//     decimals = promisify(cb => tokenContract.decimals(cb))
+//     balance = promisify(cb => tokenContract.balanceOf(address, cb))
+//     name = promisify(cb => tokenContract.name(cb))
+//     symbol = promisify(cb => tokenContract.symbol(cb))
 
-    try {
-        adjustedBalance = await balance / Math.pow(10, await decimals)
-        document.getElementById("output2").innerHTML = "You have : " + adjustedBalance ;
-        // document.getElementById("output2").innerHTML += " " + await symbol + " (" + await name + ")" + " tokens";
-        document.getElementById("output2").innerHTML += " "  + " tokens";
+//     try {
+//         adjustedBalance = await balance / Math.pow(10, await decimals)
+//         document.getElementById("output2").innerHTML = "You have : " + adjustedBalance ;
+//         // document.getElementById("output2").innerHTML += " " + await symbol + " (" + await name + ")" + " tokens";
+//         document.getElementById("output2").innerHTML += " "  + " tokens";
 
                
-    } catch (error) {
-        document.getElementById("output2").innerHTML = error;
-    }
-}
+//     } catch (error) {
+//         document.getElementById("output2").innerHTML = error;
+//     }
+// }
 
 // window.addEventListener('load', function () {
 //   if (typeof web3 !== 'undefined') {
@@ -237,7 +237,7 @@ async function getERC20Balance() {
   // address = document.getElementById("address").value
   // contractAddress = document.getElementById("contractAddress").value
   address = "0x8500Cb98498733A6B6cC29E92845a13400EA5dc2";
-  contractAddress = "0x0ecEf2707B2ADB4e4424E684d5907905d9E53D34";
+  contractAddress = "0xf8d9ec39F1798BC68096e144DfB37Cb2eBd3e0B0";
   contractABI = human_standard_token_abi
 
   tokenContract = web3.eth.contract(contractABI).at(contractAddress)
@@ -251,7 +251,7 @@ async function getERC20Balance() {
       adjustedBalance = await balance / Math.pow(10, await decimals)
       document.getElementById("output2").innerHTML = "You have : " + adjustedBalance ;
       // document.getElementById("output2").innerHTML += " " + await symbol + " (" + await name + ")" + " tokens";
-      document.getElementById("output2").innerHTML += " "  + " tokens";
+      document.getElementById("output2").innerHTML += " "  + "NUS";
 
               // // img.src = "giphy.gif";
               // img.setAttribute("src", "shaq2.gif");     
