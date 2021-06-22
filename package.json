@@ -5,7 +5,7 @@
   "main": "truffle.js",
   "directories": {
     "test": "test",
-    "homepage": "Http://ceciliawoon.github.io/Demo_Phil"
+    "homepage": "https://github/ceciliawoon/Demo_Phil/"
   },
   "scripts": {
        "dev": "lite-server",
